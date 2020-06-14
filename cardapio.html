@@ -10,11 +10,11 @@
 
     <style>
 
+      
     .rodape {
-        background-color: rgba(48, 47, 47, 0.452);
+        background-color: rgb(48, 47, 47);
         height: 100px;
         width: 100%;
-        position: fixed; /* Fixei a posição do rodapé para trabalhar dentro dele sem que haja mudanças no tamanho. */
       }
 
     .copyright { /* Texto do rodapé */
@@ -25,16 +25,15 @@
       }
 
       .principal { /* Div que abrange o cardápio todo */
-        width: 805px;
-        height: 505px;
-        position:static;
+        width: 100%;
+        height: auto; /* Ana mudou para height auto*/
+        overflow: scroll; /*Ana mudou para OverFlow*/ 
       }
 
-        #grad1 { /* Background Gradiente */
+        #grad1 { /* Background Gradiente */ 
          height: 50%;
          background-color: black;
-         background-image: linear-gradient(to bottom right , black , rgb(48, 47, 47));
-        }
+         background-image: linear-gradient(to bottom right , black , rgb(48, 47, 47)); } 
 
         .navegação:defined { /* Caixa de navegação */
             width: 100px;
